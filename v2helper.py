@@ -56,6 +56,7 @@ def main():
     t = json.loads(r2.text)
     if t["msg"]:
         print(t["msg"])
+        send_wechat(t["msg")
     else:
         print("Error")
         send_wechat("发生错误")
